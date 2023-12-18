@@ -1,3 +1,2 @@
 #!/bin/bash
-# This script will display the whois information for a given domain
-# Usage: ./0-whois.sh <domain>
+whois $1 | awk -F ',' '/^Registrant|^Admin|^Tech/ {gsub(":", ","); print $0}' > holbertonschool.com.csv
