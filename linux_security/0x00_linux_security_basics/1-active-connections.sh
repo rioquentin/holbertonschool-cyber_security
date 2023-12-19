@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo ss -at4p
+sudo ss -atp
