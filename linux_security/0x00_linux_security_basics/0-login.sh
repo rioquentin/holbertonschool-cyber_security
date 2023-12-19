@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo last | head -n 5 && last | tail -n 2
+sudo last | awk 'NR <= 5 {print} END {lines[NR]=$0; for (i=NR-1; i<=NR; i++) print lines[i]}'
