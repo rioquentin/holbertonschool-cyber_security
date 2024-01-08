@@ -1,2 +1,2 @@
 #!/bin/bash
-echo -n $1 | md5sum | tr -d "-">2_hash.txt
+echo -n $1 | md5sum | cut -c-32 >> 2_hash.txt
