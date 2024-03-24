@@ -1,2 +1,2 @@
 #!/bin/bash
-cat /etc/*-release | grep "DISTRIB_ID=" | cut -d '=' -f2
+lsb_release -a | grep "Distributor" | cut -f2
