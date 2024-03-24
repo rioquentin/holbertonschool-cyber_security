@@ -1,2 +1,2 @@
 #!/bin/bash
-ps -U root -u root u | grep "root"
+ps aux | grep "^$1"
