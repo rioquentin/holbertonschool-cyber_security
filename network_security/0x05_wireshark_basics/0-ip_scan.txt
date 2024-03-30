@@ -1,1 +1,1 @@
-icmp and ip.dst == <target>
+ip.proto == 1 and ip.dst == <target>
