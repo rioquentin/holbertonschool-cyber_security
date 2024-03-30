@@ -1,0 +1,2 @@
+icmp and ip.dst == <target>
+
